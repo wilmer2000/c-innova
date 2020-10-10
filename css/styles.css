@@ -1,0 +1,56 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.menu-bar {
+    padding: 15px;
+}
+
+.menu-bar ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+}
+
+.menu-bar ul li {
+    list-style: none;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+.menu-bar ul li a {
+    display: inline-block;
+}
+
+.slider-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.slider-content .c-innova-text,
+.slider-content .c-innova-logo {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: center;
+}
+
+.slider-content .c-innova-text {}
+.slider-content .c-innova-logo {}
+
+
+.section-content {
+    padding: 65px 0;
+}
