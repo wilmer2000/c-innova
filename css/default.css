@@ -128,10 +128,6 @@ b, span, strong {
     padding-bottom: 0;
 }
 
-.form-group {
-
-}
-
 .form-group + .form-group {
     margin-top: 15px;
 }

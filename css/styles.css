@@ -26,15 +26,15 @@ header {
     list-style: none;
     order: 0;
     flex: 0 1 auto;
-    align-self: auto;
+    align-self: center;
     margin: 0 30px;
 }
 
-.menu-bar ul li.logo {
+.menu-bar .logo {
     flex: 1 1 auto;
 }
 
-.menu-bar ul li.logo img {
+.menu-bar .logo img {
     height: 50px;
     width: auto;
     display: block;
@@ -45,6 +45,24 @@ header {
 .menu-bar ul li a {
     display: inline-block;
     color: #274AB7;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.menu-mobile .logo img {
+    display: inline;
+    margin: 0
+}
+.menu-mobile .btn-menu {
+    margin: 0 15px 0 0;
+}
+
+.btn-menu-mobile img {
+    display: block;
+    height: 40px;
+    width: auto;
 }
 
 .slider-content {
