@@ -37,8 +37,8 @@ b, span, strong {
 .btn {
     display: inline-block;
     padding: 10px 50px;
-    border: 2px solid #274AB7;
-    background: #274AB7;
+    border: 2px solid #3d9c8b;
+    background: #3d9c8b;
     color: #FFF;
     border-radius: 48px;
 }
@@ -48,6 +48,15 @@ b, span, strong {
 .btn.btn-large {
     width: 100%;
     display: block;
+}
+.btn.btn-blue {
+    border-color: #274AB7;
+    background: #274AB7;
+}
+.btn.btn-white {
+    border-color: #FFFFFF;
+    background: #FFFFFF;
+    color: #3d9c8b;
 }
 .col-centered {
     margin: 0 auto;

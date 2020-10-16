@@ -56,25 +56,16 @@ header {
     align-items: center;
     height: 100vh;
     width: 100%;
-    overflow: hidden;
+    background-color: #3d9c8b;
 }
 
-.slider-content .c-innova-text,
-.slider-content .c-innova-logo {
+.slider-content .c-innova-text {
     order: 0;
     flex: 0 1 auto;
     align-self: center;
     position: relative;
-}
-
-.slider-content .c-innova-text {
-    padding: 20px;
-    margin-right: 200px;
-}
-
-.slider-content .c-innova-logo {
-    max-width: 320px;
-    width: 100%;
+    padding: 15px;
+    text-align: center;
 }
 
 .slider-content .logo {
@@ -82,54 +73,8 @@ header {
     display: block;
     height: auto;
     z-index: 1;
-}
-
-.slider-content .back-photo,
-.slider-content .square {
-    position: absolute;
-    z-index: -1;
-}
-
-.slider-content .back-1 {
-    top: -40%;
-    left: -20%;
-    max-width: 160px;
-}
-
-.slider-content .back-2 {
-    top: -30%;
-    right: -50%;
-    width: 250px;
-}
-
-.slider-content .back-3 {
-    bottom: -20%;
-    left: -30%;
-    max-width: 210px;
-}
-
-.slider-content .color-1 {
-    width: 160px;
-    height: 40px;
-    background: #BEF065;
-    top: 10px;
-    left: -40%;
-}
-
-.slider-content .color-2 {
-    width: 120px;
-    height: 120px;
-    background: #CB2B58;
-    top: 30%;
-    right: -60%;
-}
-
-.slider-content .color-3 {
-    width: 200px;
-    height: 40px;
-    background: #274AB7;
-    bottom: -25%;
-    left: 0;
+    max-width: 300px;
+    margin: 0 auto 30px;
 }
 
 .c-innova-text h1 {
@@ -137,12 +82,14 @@ header {
     font-size: 80px;
     line-height: 1;
     text-align: center;
+    color: #FFF;
 }
 
 .c-innova-text h2 {
     font-size: 27px;
     font-weight: 100;
     text-align: center;
+    color: #FFF;
 }
 
 .c-innova-text .btn {
@@ -202,6 +149,7 @@ header {
 .contact-content {
     background: #274AB7;
 }
+
 .contact-content .title-style-1 {
     color: #ffffff;
 }
@@ -211,19 +159,23 @@ header {
     background: #FFF;
     margin: 0;
 }
+
 .social-media {
     padding: 0;
     margin: 0;
 }
+
 .social-media li {
     list-style: none;
     display: inline-block;
     padding: 15px;
 }
+
 .social-media img {
     display: block;
     width: 50px;
 }
+
 .social-media-content {
     margin-top: 30px;
 }
@@ -236,6 +188,7 @@ header {
     width: 100%;
     height: 100%;
 }
+
 .figure-content-service img {
     display: block;
     width: 100%;
