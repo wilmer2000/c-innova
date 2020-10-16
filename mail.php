@@ -5,7 +5,7 @@
     $comment = $_POST['comment'];
     $message = '';
 
-    $to  = 'wilmervzla2000@gmail.com';
+    $to  = 'contacto@c-innova.com';
     $subject = 'Contacto desde la Página de C-INNOVA';
 
     // Mensaje
