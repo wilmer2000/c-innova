@@ -58,19 +58,18 @@ b, span, strong {
     width: 100%;
     display: block;
 }
-<<<<<<< HEAD
+
 .btn.btn-blue {
     border-color: #274AB7;
     background: #274AB7;
 }
+
 .btn.btn-white {
     border-color: #FFFFFF;
     background: #FFFFFF;
     color: #3d9c8b;
 }
-=======
 
->>>>>>> 4d6e04275fdf683657374476ae99ebcdfdab9d06
 .col-centered {
     margin: 0 auto;
 }
@@ -101,6 +100,7 @@ b, span, strong {
     padding: 30px;
     max-width: 70%;
 }
+
 .banner .banner-text-content .title-text {
     font-size: 26px;
     line-height: 1;
