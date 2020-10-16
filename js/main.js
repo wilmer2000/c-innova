@@ -1,4 +1,10 @@
 
+$('.btn_menu').on('click touchstart', function(event){
+  event.preventDefault();
+  $('header #menu').slideToggle('fast');
+  $('.btn_menu').toggleClass('open');
+});
+
 $('#contact form').submit(function(event) {
   event.preventDefault();
   if (grecaptcha.getResponse() != "") {
@@ -23,6 +29,8 @@ $('#contact form').submit(function(event) {
     }, 1500);
   }
 });
+
+
 
 // (function($) {
 //   "use strict"; // Start of use strict
