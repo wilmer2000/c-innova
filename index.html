@@ -1,92 +1,179 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
     <title>C-INNOVA - Atención Integral en Salud Mental</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
-          rel="stylesheet" type="text/css">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
-    <link href="css/styles.min.css" rel="stylesheet">
-
+    <script src="js/jquery.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
+<body>
 
-<body id="page-top">
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">C-INNOVA</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-            <a class="nav-item nav-link js-scroll-trigger" href="#page-top">Inicio</a>
-            <a class="nav-item nav-link js-scroll-trigger" href="#about">Quienes Somos</a>
-            <a class="nav-item nav-link js-scroll-trigger" href="#services">Servicios</a>
-            <a class="nav-item nav-link js-scroll-trigger" href="#contact">Contacto</a>
-            <a class="nav-item nav-link js-scroll-trigger" href="#covenants">Convenios</a>
+<header>
+    <div class="container-menu">
+        <div class="menu-mobile">
+            <div class="left">
+                <a class="logo" href="index.html">
+                    <img src="img/logo.svg" alt="C-INNOVA">
+                </a>
+            </div>
+            <div class="right">
+                <a class="btn-menu js_btn_menu" href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
         </div>
+        <nav id="menu-bar" class="menu-bar">
+            <ul>
+                <li class="logo">
+                    <a href="#slider">
+                        <img src="img/logo.svg" alt="C-INNOVA">
+                    </a>
+                </li>
+                <li>
+                    <a href="#slider">Inicio</a>
+                </li>
+                <li>
+                    <a href="#about">Quienes Somos</a>
+                </li>
+                <li>
+                    <a href="#services">Servicios</a>
+                </li>
+                <li>
+                    <a href="#contact">Contacto</a>
+                </li>
+            </ul>
+        </nav>
     </div>
-</nav>
+</header>
 
-<!-- Inicio -->
-<section class="masthead d-flex">
-    <div class="container text-center my-auto">
-        <img src="img/logo.svg" alt="c-innova logo" class="logo">
-        <h1 class="mb-1">C-INNOVA</h1>
-        <h3 class="mb-5">
-            <em>Atención Integral en Salud Mental</em>
-        </h3>
-        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Más información</a>
+<section class="slider-content section-content" id="slider">
+    <div class="c-innova-text">
+        <img src="img/logo.svg" class="logo" alt="C-INNOVA Logo">
+        <h1>
+            C-INNOVA
+        </h1>
+        <h2>Atención Integral en Salud Mental</h2>
+        <a class="btn btn-white" href="#about">Más información</a>
     </div>
-    <div class="overlay"></div>
 </section>
 
-<!-- Quienes Somos -->
-<section class="content-section bg-light" id="about">
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-lg-10 mx-auto">
-                <h2 class="mb-5">¿Quienes somos?</h2>
-                <p class="lead mb-5">
+<section class="about-content section-content" id="about">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-sm-12 col-md-8 col-centered text-center">
+                <h2 class="text-center title-style-1">¿Quienes somos?</h2>
+                <p>
                     Somos un equipo de Psicólogos formados en diferentes especializaciones y metodologías con vasta
                     experiencia en atención clínica, brindando una atención acorde a las necesidades de las personas.
                 </p>
-                <p class="lead mb-5">
+                <p>
                     Desde la primera instancia de consulta, nuestro objetivo es conocer y comprender cual es la demanda
                     de ayuda que está solicitando la persona que acude a nuestro centro y así brindar la atención
                     psicoterapéutica de la cual se pueda beneficiar alcanzando su bienestar.
                 </p>
-                <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">¿Qué ofrecemos?</a>
+                <a class="btn btn-blue btn-services" href="#services">¿Qué ofrecemos?</a>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Servicios -->
-<section class="content-section bg-primary text-white" id="services">
+<section class="specialist-content section-content">
     <div class="container">
-        <div class="content-section-heading">
-            <h2 class="mb-5">Servicios</h2>
+        <div class="row">
+            <div class="col-12">
+                <h3 class="text-center title-style-2">Especialistas</h3>
+            </div>
         </div>
         <div class="row">
-            <div class="col-lg-12 col-md-12 mb-5">
-                <h3 class="mb-4">Unidad de Psicología General</h3>
+            <div class="col-sm-12 col-md-6 col-xl-4">
+                <figure class="specialist">
+                    <img src="img/gabriella-repetto.jpg" alt="Gabriella Repetto">
+                    <figcaption>
+                        <h2>Gabriella Repetto</h2>
+                        <p><b>Jóvenes y Adultos</b></p>
+                        <ul>
+                            <li>Psicoterapia Psicoanalítica</li>
+                            <li>Psicosomática</li>
+                            <li>Rehabilitación en Psicosis</li>
+                            <li>Acompañamiento terapéutico</li>
+                        </ul>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-4">
+                <figure class="specialist">
+                    <img src="img/marie-asis.jpg" alt="Marie Asís">
+                    <figcaption>
+                        <h2>Marie Asís</h2>
+                        <p><b>Adultos y Mayores</b></p>
+                        <ul>
+                            <li>Psicoterapia Psicoanalítica</li>
+                            <li>Psicosomática</li>
+                            <li>Rehabilitación cognitiva</li>
+                            <li>Psicología laboral</li>
+                        </ul>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-4">
+                <figure class="specialist">
+                    <img src="img/catalina-frontini.jpg" alt="Catalina Frontini">
+                    <figcaption>
+                        <h2>Catalina Frontini</h2>
+                        <p><b>Niños, Jóvenes y Adultos</b></p>
+                        <ul>
+                            <li>Psicoterapia Cognitivo Comportamental</li>
+                            <li>Psicoterapia EMDR</li>
+                            <li>Rehabilitación en Psicosis</li>
+                        </ul>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xl-4 col-centered">
+                <figure class="specialist">
+                    <img src="img/nil-melo.jpg" alt="Nil Melo">
+                    <figcaption>
+                        <h2>Nil Melo</h2>
+                        <p><b>Niños, Jóvenes y Adultos</b></p>
+                        <ul>
+                            <li>Psicoterapia Sistémica</li>
+                            <li>Rehabilitación en Psicosis</li>
+                            <li>Acompañamiento terapéutico</li>
+                        </ul>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services-content section-content" id="services">
+    <div class="container">
+        <div class="col-12">
+            <h2 class="text-center title-style-1">Servicios</h2>
+        </div>
+        <!-- Unidad de Psicoterapia Individual y Grupal -->
+        <div class="row align-items-center service-content">
+            <div class="col-sm-12 col-lg-5">
+                <figure class="figure-content-service">
+                    <img src="img/workshop-2.jpg" alt="Unidad de Psicoterapia Individual y Grupal">
+                </figure>
+            </div>
+            <div class="col-sm-12 col-lg-7">
+                <h3>Unidad de Psicoterapia Individual y Grupal</h3>
                 <p>Brindamos atención en diferentes enfoques Psicoterapéuticos individuales
                     o grupales, abarcando todas las franjas etareas (niño, adolescentes, adultos, adultos mayores,
                     pareja y familia)</p>
@@ -100,114 +187,159 @@
                     <li>Acompañamiento terapéutico</li>
                 </ul>
             </div>
-            <div class="col-lg-12 col-md-12 mb-5">
-                <h3 class="mb-4">Unidad de Psicosis</h3>
-                <div class="row">
-                    <div class="col-lg-12 col-md-12">
-                        <h4 class="mb-3">Rehabilitación en personas con trastorno mental severo</h4>
+        </div>
+
+        <!-- Unidad de Psicosis -->
+        <div class="row align-items-center service-content">
+            <div class="col-sm-12 col-lg-5">
+                <figure class="figure-content-service">
+                    <img src="img/sadness.jpg" alt="Unidad de Psicoterapia Individual y Grupal">
+                </figure>
+            </div>
+            <div class="col-sm-12 col-lg-7">
+                <h3>Unidad de Psicosis</h3>
+                <h4>Rehabilitación en personas con trastorno mental severo</h4>
+                <p>
+                    El objetivo de los programas de rehabilitación está dirigido a alcanzar
+                    una forma de vida lo más funcional posible tanto en su desempeño personal como en su
+                    relacionamiento familiar. Apuntando al fortaleciendo en su inclusión social y laboral
+                    con el fin de mejorar los niveles de autonomía.
+                </p>
+            </div>
+        </div>
+
+        <!-- Unidad de Psicoeducación -->
+        <div class="row align-items-center service-content">
+            <div class="col-sm-12 col-lg-5">
+                <figure class="figure-content-service">
+                    <img src="img/sadness.jpg" alt="Unidad de Psicoterapia Individual y Grupal">
+                </figure>
+            </div>
+            <div class="col-sm-12 col-lg-7">
+                <h3>Unidad de Psicoeducación</h3>
+                <ul>
+                    <li>Familiares y/o cuidadores de personas con trastorno mental severo</li>
+                    <li>Familiares y/o cuidadores de personas mayores</li>
+                    <li>Multifamiliares</li>
+                </ul>
+            </div>
+            <div class="col-12">
+                <figure class="banner workshop-banner">
+                    <img src="img/workshop.jpg" alt="Workshop banner">
+                    <figcaption>
+                        <div class="banner-text-content red-color">
+                            <h3 class="title-text">Talleres</h3>
+                            <p>
+                                La atención estará a cargo del técnico correspondiente y supervisado por un Psicólogo
+                                experto en dichos trastornos, teniendo en cuenta el perfil y el entorno del usuario,
+                                fortaleciendo sus potencialidades para lograr el mayor beneficio del programa y una
+                                calidad de vida digna lo más autónoma posible.
+                            </p>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-12">
+                <div class="row grid-content">
+                    <div class="col-12">
+                        <h4>Talleres de Rehabilitación cognitiva</h4>
                         <p>
-                            El objetivo de los programas de rehabilitación está dirigido a alcanzar
-                            una forma de vida lo más funcional posible tanto en su desempeño personal como en su
-                            relacionamiento familiar. Apuntando al fortaleciendo en su inclusión social y laboral
-                            con el fin
-                            de mejorar los niveles de autonomía.
+                            Los trastornos cognitivos afectan el desempeño de la persona con trastorno mental
+                            severo, en múltiples tareas y varía de acuerdo al perfil de cada uno. Nuestros
+                            talleres apuntan a mejorar y fortalecer diferentes áreas como la atención,
+                            concentración, mejorar el desempeño de la funciones ejecutivas (coordinación, toma
+                            de decisiones, planificación). A través de la aplicación de estrategias
+                            compensatorias se busca lograr un mejor desenvolvimiento en su funcionamiento
+                            cotidiano.
+                        </p>
+                        <p>
+                            Con un conocimiento previo de la persona en cuanto a sus posibilidades y
+                            preferencias se planifica un programa personalizado adaptado a sus características,
+                            siendo actividades novedosas, entretenidas y motivadoras.
                         </p>
                     </div>
-                    <div class="col-lg-12 col-md-12">
-                        <h4 class="mb-3">Talleres</h4>
+                    <div class="col-sm-12 col-md-6">
+                        <h4>Talleres expresivos</h4>
                         <p>
-                            La atención estará a cargo del técnico correspondiente y supervisado por un Psicólogo
-                            experto en dichos trastornos, teniendo en cuenta el perfil y el entorno del usuario,
-                            fortaleciendo su potencialidades para lograr el mayor beneficio del programa y una
-                            calidad de vida digna lo más autónoma posible.
+                            Utilizamos técnicas terapéuticas basadas en la comunicación y expresión de manera
+                            verbal y no verbal, proponiendo actividades artísticas como instrumentos de
+                            expresión, a
+                            través de talleres tales como Fotografía, Teatro o Plástica.
                         </p>
-                        <div class="row">
-                            <div class="col-lg-3 col-md-6">
-                                <h4 class="mb-3">Talleres expresivos</h4>
-                                <p>
-                                    Utilizamos técnicas terapéuticas basadas en la comunicación y expresión de manera
-                                    verbal y no verbal, proponiendo actividades artísticas como instrumentos de
-                                    expresión, a
-                                    través de talleres tales como Fotografía, Teatro o Plástica.
-                                </p>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <h4 class="mb-3">Talleres de Actividades de la vida diaria (básicas e instrumentales)</h4>
-                                <p>
-                                    Con el objetivo de aumentar la independencia y autonomía de la persona se realiza un
-                                    abordaje en áreas del comportamiento vinculadas con el autocuidado, competencia
-                                    personal, planificación económica, cuidado de la salud, entre otras.
-                                </p>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <h4 class="mb-3">Talleres de Habilidades sociales</h4>
-                                <p>
-                                    El objetivo está dirigido a enseñar a ejecutar comportamientos en situaciones
-                                    sociales, que le permitan desenvolverse de forma adecuada, minimizando el estrés y
-                                    las conductas de evitación, trabajando la interacción con otras personas.
-                                </p>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <h4 class="mb-3">Talleres de Rehabilitación cognitiva</h4>
-                                <p>
-                                    Los trastornos cognitivos afectan el desempeño de la persona con trastorno mental
-                                    severo, en múltiples tareas y varía de acuerdo al perfil de cada uno. Nuestros
-                                    talleres apuntan a mejorar y fortalecer diferentes áreas como la atención,
-                                    concentración, mejorar el desempeño de la funciones ejecutivas (coordinación, toma
-                                    de decisiones, planificación). A través de la aplicación de estrategias
-                                    compensatorias se busca lograr un mejor desenvolvimiento en su funcionamiento
-                                    cotidiano.
-                                </p>
-                                <p>
-                                    Con un conocimiento previo de la persona en cuanto a sus posibilidades y
-                                    preferencias se planifica un programa personalizado adaptado a sus características,
-                                    siendo actividades novedosas, entretenidas y motivadoras.
-                                </p>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <h4 class="mb-3">Talleres de Psicoeducación</h4>
-                                <p>
-                                    Se trabaja la conciencia de enfermedad, se brinda la información que sea útil para
-                                    que pueda utilizar los recursos sanitarios y sociales a los que puede acceder.
-                                </p>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <h4 class="mb-3">Psicoeducación para familiares</h4>
-                                <p>
-                                    Los talleres de psicoeducación para las familias tienen como objetivo, aproximar e
-                                    informar sobre la enfermedad, tener un intercambio de estrategias con el fin de
-                                    mejorar la convivencia y disminuir las situaciones de conflicto.
-                                </p>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <h4 class="mb-3">Grupos terapéuticos multifamiliares</h4>
-                                <p>
-                                    La convivencia y los cuidados que requieren las personas con trastorno mental severo
-                                    impacta sobre la familia que muchas veces se siente desbordada frente a una
-                                    situación que le genera sentimientos contradictorios, que no puede manejar.
-                                </p>
-                                <p>
-                                    El abordaje a través de encuentros multifamiliares son con el objetivo de poder
-                                    trabajar las temáticas que surjan entorno a las diferentes situaciones que atraviesa
-                                    cada familia, pudiendo así trabajar, la angustia, la ansiedad y los diferentes
-                                    miedos que aparezcan. Dichos grupos terapéuticos son dirigidos por Psicólogos
-                                    expertos en esta área.
-                                </p>
-                            </div>
-                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <h4>Talleres de Actividades de la vida diaria (básicas e instrumentales)</h4>
+                        <p>
+                            Con el objetivo de aumentar la independencia y autonomía de la persona se realiza un
+                            abordaje en áreas del comportamiento vinculadas con el autocuidado, competencia
+                            personal, planificación económica, cuidado de la salud, entre otras.
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <h4>Talleres de Habilidades sociales</h4>
+                        <p>
+                            El objetivo está dirigido a enseñar a ejecutar comportamientos en situaciones
+                            sociales, que le permitan desenvolverse de forma adecuada, minimizando el estrés y
+                            las conductas de evitación, trabajando la interacción con otras personas.
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <h4>Talleres de Psicoeducación</h4>
+                        <p>
+                            Se trabaja la conciencia de enfermedad, se brinda la información que sea útil para
+                            que pueda utilizar los recursos sanitarios y sociales a los que puede acceder.
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-12">
+                        <h4>Psicoeducación para familiares</h4>
+                        <p>
+                            Los talleres de psicoeducación para las familias tienen como objetivo, aproximar e
+                            informar sobre la enfermedad, tener un intercambio de estrategias con el fin de
+                            mejorar la convivencia y disminuir las situaciones de conflicto.
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-12">
+                        <h4>Grupos terapéuticos multifamiliares</h4>
+                        <p>
+                            La convivencia y los cuidados que requieren las personas con trastorno mental severo
+                            impacta sobre la familia que muchas veces se siente desbordada frente a una
+                            situación que le genera sentimientos contradictorios, que no puede manejar.
+                        </p>
+                        <p>
+                            El abordaje a través de encuentros multifamiliares son con el objetivo de poder
+                            trabajar las temáticas que surjan entorno a las diferentes situaciones que atraviesa
+                            cada familia, pudiendo así trabajar, la angustia, la ansiedad y los diferentes
+                            miedos que aparezcan. Dichos grupos terapéuticos son dirigidos por Psicólogos
+                            expertos en esta área.
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-12 col-md-12 mb-5">
-                <h3 class="mb-4">Unidad del adulto mayor</h3>
-                <p class="mb-3">
-                    La Psicología se ha venido adaptando a la creciente necesidad de brindar atención a las personas
-                    mayores, cada vez más los psicólogos trabajamos en el campo del envejecimiento, tanto en la
-                    prevención como en el tratamiento del deterioro cognitivo.
-                </p>
-                <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <h4 class="mb-3">Rehabilitación Cognitiva</h4>
+        </div>
+
+        <!-- Unidad del Adulto mayor -->
+        <div class="row align-items-center service-content">
+            <div class="col-12">
+                <figure class="banner">
+                    <img src="img/older.jpg" alt="Elders banner">
+                    <figcaption>
+                        <div class="banner-text-content blue-color">
+                            <h3 class="title-text">Unidad del Adulto mayor</h3>
+                            <p>
+                                La Psicología se ha venido adaptando a la creciente necesidad de brindar atención a las
+                                personas
+                                mayores, cada vez más los psicólogos trabajamos en el campo del envejecimiento, tanto en
+                                la
+                                prevención como en el tratamiento del deterioro cognitivo.
+                            </p>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-12">
+                <div class="row grid-content">
+                    <div class="col-12">
+                        <h4>Rehabilitación Cognitiva</h4>
                         <p>
                             La rehabilitación cognitiva está dirigida a personas que han comenzado con un proceso de
                             deterioro cognitivo asociado a alguna patología.
@@ -227,8 +359,8 @@
                             de vida manteniendo su autonomía el mayor tiempo posible.
                         </p>
                     </div>
-                    <div class="col-lg-6 col-md-6">
-                        <h4 class="mb-3">Entrenamiento Cognitivo</h4>
+                    <div class="col-sm-12 col-md-6">
+                        <h4>Entrenamiento Cognitivo</h4>
                         <p>
                             Está dirigido a personas sanas que desean fortalecer y mantener las funciones
                             cognitivas, beneficiando sobre todo a aquellas personas que no mantienen una actividad
@@ -239,8 +371,8 @@
                             rendimiento actuando como factor protector frente a un posible deterioro.
                         </p>
                     </div>
-                    <div class="col-lg-6 col-md-6">
-                        <h4 class="mb-3">Evaluación Neuropsicológica</h4>
+                    <div class="col-sm-12 col-md-6">
+                        <h4>Evaluación Neuropsicológica</h4>
                         <p>
                             A través de la aplicación de test neuropsicológicos realizamos una evaluación que tiene
                             como objetivo conocer el perfil cognitivo de la persona en las diferentes áreas
@@ -249,11 +381,11 @@
                             familiar.
                         </p>
                     </div>
-                    <div class="col-lg-6 col-md-6">
-                        <h4 class="mb-3">Apoyo y orientación a familiares y cuidadores principales</h4>
+                    <div class="col-sm-12 col-md-12">
+                        <h4>Apoyo y orientación a familiares y cuidadores principales</h4>
                         <p>
                             Cuidar a una persona con deterioro cognitivo, frecuentemente implica un esfuerzo físico
-                            y emocional, tanto el familiar como el cuidador que puede experimentar sentimientos que
+                            tanto del familiar como del cuidador que puede experimentar sentimientos que
                             van desde la frustración, enojo, miedo, tristeza, culpa. Tener un espacio donde poder
                             expresar estos afectos y recibir orientación, es de gran ayuda para la familia y el
                             cuidador.
@@ -261,145 +393,112 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-12 col-md-12">
-                <h3 class="mb-4">Unidad  de capacitación</h3>
-                <div class="description">
-                    <p>Talleres de  capacitación para:</p>
-                    <ul>
-                        <li>Familiares y/o cuidadores de personas con trastorno mental severo</li>
-                        <li>Familiares y/o cuidadores de personas mayores</li>
-                    </ul>
+        </div>
+
+        <!-- Unidad de Capacitación -->
+        <div class="row align-items-center service-content">
+            <div class="col-sm-12 col-lg-5">
+                <figure class="figure-content-service">
+                    <img src="img/workshop-2.jpg" alt="Unidad de Psicoterapia Individual y Grupal">
+                </figure>
+            </div>
+            <div class="col-sm-12 col-lg-7">
+                <h3>Unidad de Capacitación</h3>
+                <p>Talleres de capacitación para:</p>
+                <ul>
+                    <li>Familiares y/o cuidadores de personas con trastorno mental severo</li>
+                    <li>Familiares y/o cuidadores de personas mayores</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-content section-content" id="contact">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12">
+                <h2 class="text-center title-style-1">Contactanos</h2>
+            </div>
+            <div class="col-sm-12 col-md-8 col-xl-6 col-centered">
+                <div class="contact-form-content">
+                    <form id="form-contact">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="phone" placeholder="Teléfono" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="mail" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="comment" rows="3" placeholder="Comentarios"
+                                      required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <div class="g-recaptcha" data-sitekey="6LdM4NUZAAAAAKHkGV6IbYjyd7_-e5ik4HYBgDZ2"></div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-blue btn-large">Enviar</button>
+                        </div>
+                        <div class="message-modal">
+                            <div class="flex">
+                                <div class="flex_item">
+                                    <div class="spinner"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="message-info-modal">
+                            <div class="flex">
+                                <div class="flex_item">
+                                    <div class="info-content success">
+                                        <h3>Mensaje Enviado</h3>
+                                        <p>Pronto les estaramos respondiendo a su mensaje, Gracias.</p>
+                                        <a class="btn btn-blue btn-message-info-modal">
+                                            Cerrar
+                                        </a>
+                                    </div>
+                                    <div class="info-content error">
+                                        <h3>Mensaje no Enviado</h3>
+                                        <p>Ha ocurrido un error enviado el mensaje, intente nuevamente, en caso de
+                                            persistir el problema comuníquese con nosotros por nuestras redes sociales,
+                                            podrá encontrar los links más abajos, disculpe las molestias ocasionadas,
+                                            Gracias.</p>
+                                        <a class="btn btn-blue btn-message-info-modal">
+                                            Cerrar
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="text-center social-media-content">
+                        <h3>Redes Sociales</h3>
+                        <ul class="social-media">
+                            <li>
+                                <a href="https://www.facebook.com/cinnovauruguay" target="_blank">
+                                    <img src="img/facebook.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/c-innova-atenci%C3%B3n-integral-en-salud-mental-6a45871b8/"
+                                   target="_blank">
+                                    <img src="img/linkedin.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/innova.contactosuy" target="_blank">
+                                    <img src="img/instagram.svg">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-<!-- Callout -->
-<section class="callout">
-    <div class="container text-center">
-        <h2 class="mx-auto mb-5">Welcome to
-            <em>your</em>
-            next website!</h2>
-        <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/themes/stylish-portfolio/">Download Now!</a>
-    </div>
-</section>
-
-<!-- Convenios -->
-<section class="content-section" id="covenants">
-    <div class="container">
-        <div class="content-section-heading text-center">
-            <h3 class="text-secondary mb-0">Portfolio</h3>
-            <h2 class="mb-5">Recent Projects</h2>
-        </div>
-        <div class="row no-gutters">
-            <div class="col-lg-6">
-                <a class="portfolio-item" href="#!">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="h2">Stationary</div>
-                            <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
-                        </div>
-                    </div>
-                    <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-6">
-                <a class="portfolio-item" href="#!">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="h2">Ice Cream</div>
-                            <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream
-                                cone!</p>
-                        </div>
-                    </div>
-                    <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-6">
-                <a class="portfolio-item" href="#!">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="h2">Strawberries</div>
-                            <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on
-                                top!</p>
-                        </div>
-                    </div>
-                    <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-6">
-                <a class="portfolio-item" href="#!">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <div class="h2">Workspace</div>
-                            <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
-                        </div>
-                    </div>
-                    <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Call to Action -->
-<section class="content-section bg-primary text-white">
-    <div class="container text-center">
-        <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-        <a href="#!" class="btn btn-xl btn-light mr-4">Click Me!</a>
-        <a href="#!" class="btn btn-xl btn-dark">Look at Me!</a>
-    </div>
-</section>
-
-<!-- Contacto -->
-<div id="contact" class="map">
-    <iframe src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-    <br/>
-    <small>
-        <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-    </small>
-</div>
-
-<!-- Footer -->
-<footer class="footer text-center">
-    <div class="container">
-        <ul class="list-inline mb-5">
-            <li class="list-inline-item">
-                <a class="social-link rounded-circle text-white mr-3" href="#!">
-                    <i class="icon-social-facebook"></i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="social-link rounded-circle text-white mr-3" href="#!">
-                    <i class="icon-social-twitter"></i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="social-link rounded-circle text-white" href="#!">
-                    <i class="icon-social-github"></i>
-                </a>
-            </li>
-        </ul>
-        <p class="text-muted small mb-0">Copyright &copy; Your Website 2020</p>
-    </div>
-</footer>
-
-<!-- Scroll to Top Button-->
-<a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-</a>
-
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-<!-- Plugin JavaScript -->
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-<!-- Custom scripts for this template -->
-<script src="js/stylish-portfolio.min.js"></script>
-
+<script src="js/main.js"></script>
 </body>
-
 </html>
