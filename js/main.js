@@ -25,21 +25,26 @@ $(document).ready(function () {
         event.preventDefault();
         if (grecaptcha.getResponse() != "") {
             var data = {
-                'name': $("#contacto #name").val(),
-                'phone': $("#contacto #phone").val(),
-                'mail': $("#contacto #mail").val(),
-                'comment': $("#contacto #comment").val()
+                'name': $("#form-contact #name").val(),
+                'phone': $("#form-contact #phone").val(),
+                'mail': $("#form-contact #mail").val(),
+                'comment': $("#form-contact #comment").val()
             };
-            $('.messgmodal').fadeIn('fast');
+            $('.message-modal').fadeIn('fast');
             setTimeout(function () {
                 $.ajax({
                     type: "POST",
                     url: "mail.php",
                     data: data,
                     success: function () {
-                        $('.messgmodal').fadeOut('fast');
-                        $("#contacto .form-control").val('');
+                        $('.message-modal').fadeOut('fast', function () {
+                            $('.message-info-modal').fadeIn('fast');
+                        });
+                        $("#form-contact .form-control").val('');
                         grecaptcha.reset();
+                    },
+                    error: function () {
+                        console.log('error enviado email')
                     }
                 });
             }, 1500);
