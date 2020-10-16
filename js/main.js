@@ -42,16 +42,23 @@ $(document).ready(function () {
                     data: data,
                     success: function () {
                         $('.message-modal').fadeOut('fast', function () {
-                            $('.message-info-modal').fadeIn('fast');
+                            $('.message-info-modal').addClass('sent').fadeIn('fast');
                         });
-                        $("#form-contact .form-control").val('');
-                        grecaptcha.reset();
+                        resetForm();
                     },
                     error: function () {
-                        console.log('error enviado email')
+                        $('.message-modal').fadeOut('fast', function () {
+                            $('.message-info-modal').addClass('no-sent').fadeIn('fast');
+                        });
+                        resetForm();
                     }
                 });
             }, 1500);
         }
     });
+
+    function resetForm() {
+        $("#form-contact .form-control").val('');
+        grecaptcha.reset();
+    }
 })
