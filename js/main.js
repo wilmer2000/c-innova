@@ -4,6 +4,10 @@ $(document).ready(function () {
         $('#menu-bar').slideToggle();
         $('.js_btn_menu').toggleClass('open');
     });
+    $('.btn-message-info-modal').on('click touchstart', function (event) {
+        event.preventDefault();
+        $('.message-info-modal').hide();
+    });
     $('.menu-bar ul li a').on('click touchstart', function (event) {
         event.preventDefault();
         $('#menu-bar').slideUp();
