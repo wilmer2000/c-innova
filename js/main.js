@@ -6,7 +6,7 @@ $(document).ready(function () {
     });
     $('.btn-message-info-modal').on('click touchstart', function (event) {
         event.preventDefault();
-        $('.message-info-modal').hide();
+        $('.message-info-modal').removeClass('success error').hide();
     });
     $('.menu-bar ul li a').on('click touchstart', function (event) {
         event.preventDefault();
@@ -42,12 +42,14 @@ $(document).ready(function () {
                     data: data,
                     success: function () {
                         $('.message-modal').fadeOut('fast', function () {
+                            $('.message-info-modal').addClass('success')
                             $('.message-info-modal.success').fadeIn('fast');
                         });
                         resetForm();
                     },
                     error: function () {
                         $('.message-modal').fadeOut('fast', function () {
+                            $('.message-info-modal').addClass('error')
                             $('.message-info-modal.error').fadeIn('fast');
                         });
                         resetForm();
@@ -59,6 +61,7 @@ $(document).ready(function () {
 
     function resetForm() {
         $("#form-contact .form-control").val('');
+        $('.message-info-modal').removeClass('success error').hide();
         grecaptcha.reset();
     }
 })

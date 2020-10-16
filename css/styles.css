@@ -339,10 +339,6 @@ header {
 }
 
 
-.message-info-modal.success,
-.message-info-modal.error {
-    display: block;
-}
 
 .message-info-modal .info-content {
     padding: 30px;
@@ -351,6 +347,11 @@ header {
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     display: none;
+}
+
+.message-info-modal.success .info-content.success,
+.message-info-modal.error  .info-content.error{
+    display: block;
 }
 
 .info-content {
