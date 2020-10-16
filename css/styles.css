@@ -339,6 +339,11 @@ header {
 }
 
 
+.message-info-modal.success,
+.message-info-modal.error {
+    display: block;
+}
+
 .message-info-modal .info-content {
     padding: 30px;
     background: #FFF;
@@ -347,17 +352,15 @@ header {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     display: none;
 }
-.message-info-modal.sent .info-content,
-.message-info-modal.no-sent .info-content{
-    display: block;
-}
 
 .info-content {
 }
+
 .info-content h3 {
     color: #274AB7;
     margin-bottom: 30px;
 }
+
 .info-content p {
     margin-bottom: 30px;
 }

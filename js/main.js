@@ -42,13 +42,13 @@ $(document).ready(function () {
                     data: data,
                     success: function () {
                         $('.message-modal').fadeOut('fast', function () {
-                            $('.message-info-modal').addClass('sent').fadeIn('fast');
+                            $('.message-info-modal.success').fadeIn('fast');
                         });
                         resetForm();
                     },
                     error: function () {
                         $('.message-modal').fadeOut('fast', function () {
-                            $('.message-info-modal').addClass('no-sent').fadeIn('fast');
+                            $('.message-info-modal.error').fadeIn('fast');
                         });
                         resetForm();
                     }
