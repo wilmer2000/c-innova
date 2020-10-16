@@ -2,30 +2,31 @@
 /* No media query for `xs` since this is the default in Bootstrap */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 680px) {
-    .menu-bar ul.menu-mobile {
+@media (max-width: 767px) {
+    .menu-mobile {
         display: flex;
     }
-    .menu-bar ul.menu-desktop .logo {
+
+    .menu-bar,
+    .menu-bar .logo {
         display: none;
     }
-    .menu-bar ul.menu-desktop {
-        display: block;
-        margin-top: 25px;
-        border-top: solid 1px #ddd;
+
+    .menu-bar ul,
+    .menu-bar ul li {
+        display: block
     }
-    .menu-bar ul.menu-desktop li {
-        display: block;
-        margin: 30px;
+
+    .menu-bar ul li {
+        margin: 15px;
+    }
+
+    .menu-bar ul {
+        border-top: solid 1px #f1f1f1;
     }
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 681px) {
-    .menu-bar ul.menu-mobile {
-        display: none;
-    }
-}
 @media (min-width: 768px) {
     .figure-content-service {
         max-width: 300px;

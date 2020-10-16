@@ -8,11 +8,17 @@ header {
     z-index: 10;
 }
 
+.container-menu {
+    max-width: 1140px;
+    padding: 0 15px;
+}
+
 .menu-bar {
     padding: 20px 15px;
 }
 
-.menu-bar ul {
+.menu-bar ul,
+.menu-mobile {
     padding: 0;
     margin: 0;
     display: flex;
@@ -30,11 +36,28 @@ header {
     margin: 0 30px;
 }
 
+.menu-mobile {
+    display: none;
+    padding: 10px;
+}
+.menu-mobile .right,
+.menu-mobile .left {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: center;
+}
+
+.menu-mobile .left {
+    flex: 1 1 auto;
+}
+
+
 .menu-bar .logo {
     flex: 1 1 auto;
 }
 
-.menu-bar .logo img {
+.menu-bar .logo img,
+.menu-mobile .logo img {
     height: 50px;
     width: auto;
     display: block;
@@ -42,28 +65,53 @@ header {
     margin-top: -31px;
 }
 
+.menu-mobile .logo img {
+    margin: 0;
+}
+
 .menu-bar ul li a {
     display: inline-block;
     color: #274AB7;
 }
 
-.menu-mobile {
-    display: none;
-}
-
-.menu-mobile .logo img {
-    display: inline;
-    margin: 0
-}
-
-.menu-mobile .btn-menu {
-    margin: 0 15px 0 0;
-}
-
-.btn-menu-mobile img {
+.btn-menu {
     display: block;
-    height: 40px;
-    width: auto;
+    float: right;
+    padding: 10px;
+}
+
+.btn-menu span {
+    display: block;
+    height: 3px;
+}
+
+.btn-menu span {
+    display: block;
+    height: 3px;
+    width: 35px;
+    background: #3d9c8b;
+    margin-bottom: 5px;
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+
+.btn-menu span:last-child {
+    margin-bottom: 0;
+}
+
+.btn-menu.open span:first-child {
+    -webkit-transform: rotate(45deg) translateX(6px) translateY(5px);
+    transform: rotate(45deg) translateX(6px) translateY(5px);
+}
+
+.btn-menu.open span:nth-child(2) {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+.btn-menu.open span:last-child {
+    -webkit-transform: rotate(-45deg) translateX(6px) translateY(-5px);
+    transform: rotate(-45deg) translateX(6px) translateY(-5px);
 }
 
 .slider-content {
@@ -173,10 +221,12 @@ header {
     background: #FFF;
     margin: 0;
 }
+
 .contact-form-content form {
     position: relative;
     display: block;
 }
+
 .social-media {
     padding: 0;
     margin: 0;

@@ -13,45 +13,50 @@
     <link rel="stylesheet" href="css/responsive.css">
 
     <title>C-INNOVA - Atención Integral en Salud Mental</title>
-
+    <script src="js/jquery.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
-<header>
-    <nav class="menu-bar">
-        <ul class="menu-mobile">
-            <li class="logo">
-                <a href="#slider">
-                    <img src="img/logo.svg" alt="C-INNOVA">
-                </a>
-            </li>
-            <li class="btn-menu">
-                <a class="btn-menu-mobile">
-                    <img src="img/menu.svg" alt="Menu">
-                </a>
-            </li>
-        </ul>
 
-        <ul class="menu-desktop">
-            <li class="logo">
-                <a href="#slider">
+
+<header>
+    <div class="container-menu">
+        <div class="menu-mobile">
+            <div class="left">
+                <a class="logo" href="index.html">
                     <img src="img/logo.svg" alt="C-INNOVA">
                 </a>
-            </li>
-            <li>
-                <a href="#slider">Inicio</a>
-            </li>
-            <li>
-                <a href="#about">Quienes Somos</a>
-            </li>
-            <li>
-                <a href="#services">Servicios</a>
-            </li>
-            <li>
-                <a href="#contact">Contacto</a>
-            </li>
-        </ul>
-    </nav>
+            </div>
+            <div class="right">
+                <a class="btn-menu js_btn_menu" href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </div>
+        <nav id="menu-bar" class="menu-bar">
+            <ul>
+                <li class="logo">
+                    <a href="#slider">
+                        <img src="img/logo.svg" alt="C-INNOVA">
+                    </a>
+                </li>
+                <li>
+                    <a href="#slider">Inicio</a>
+                </li>
+                <li>
+                    <a href="#about">Quienes Somos</a>
+                </li>
+                <li>
+                    <a href="#services">Servicios</a>
+                </li>
+                <li>
+                    <a href="#contact">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
 <section class="slider-content section-content" id="slider">
@@ -417,7 +422,7 @@
             </div>
             <div class="col-sm-12 col-md-8 col-xl-6 col-centered">
                 <div class="contact-form-content">
-                    <form>
+                    <form id="form-contact">
                         <div class="form-group">
                             <input type="text" class="form-control" id="name" placeholder="Nombre" required>
                         </div>
@@ -471,8 +476,6 @@
         </div>
     </div>
 </section>
-
-<script src="js/jquery.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
